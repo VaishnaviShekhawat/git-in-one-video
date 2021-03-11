@@ -1,0 +1,77 @@
+<DOCTYPE!html>
+      <head>
+	        <title>contact form</title>
+	  <style>
+	         body{
+			      margin:0;
+				  padding:0;
+				  text-align:center;
+	              background-color:skyblue;
+				  border:8px solid black;
+	              background-size:cover;
+	              background-position:center;
+                  font-family:sans-serif;
+                 }
+             .contact-title{
+                            margin-top:100px;
+                            text-transform:uppercase;
+                            transition:all 4s ease-in-out;
+                           }
+             .contact-title h1{
+			                   font-size: 40px;
+							   line-height:10px;
+							  }
+			 .contact-title h2{
+			                   font-size:20px;
+							  }
+			 form{
+			      margin-top:50px;
+				  transition:all 4s ease-in-out;
+				 }
+			 .form-control{
+			               width:400px;
+						   background:transparent;
+						   border:none;
+						   outline:none;
+						   border-bottom:1px solid black;
+						   color:white;
+						   font-size:18px;
+						   margin-bottom:16px;
+						  }
+		     input{
+			       height:45px;
+				  }
+		     form .submit{
+			              border-radius:10px;
+			              background-color:black;
+						  border-color:transparent;
+						  color:white;
+						  font-size:20px;
+						  font-weight:bold;
+						  letter-spacing:2px;
+						  height:50px;
+						  margin-top:20px;
+						 }
+		     form .submit:hover{
+			                    border-radius:10px;
+				                color:white;
+				                background-color:black;
+				                padding:10px;
+							   }
+	  </style>
+	  </head>
+<body>
+ <div class="contact-title">
+           <h1>Say Hello</h1>
+		   <h2>We always ready to serve you!</h2>
+ </div>
+ <div>
+      <form method="post" action="mailto:vaishnavishekhawat2001@gmail.com" enctype="text/plain">
+	  <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+	  <input name="email" type="email" class="form-control" placeholder="Your Mail"  required><br>
+	  <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
+	  <input type="submit" class="form-control, submit" value="SEND MESSAGE" required><br>
+	  </form>
+ </div>
+</body>
+</html>
